@@ -23,3 +23,4 @@ cabal.project.local~
 .stack-work/
 haskell-in-depth.cabal
 *~
+out

@@ -23,17 +23,42 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+    - text
 
 executables:
-  haskell-in-depth-exe:
+  vocab1:
     main:                Main.hs
-    source-dirs:         app
+    source-dirs:         app/chapter02/vocab1
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
     - haskell-in-depth
+    - text
+
+  vocab2:
+    main:                Main.hs
+    source-dirs:         app/chapter02/vocab2
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - haskell-in-depth
+      - text
+
+  vocab3:
+    main:                Main.hs
+    source-dirs:         app/chapter02/vocab3
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - haskell-in-depth
+      - text
 
 tests:
   haskell-in-depth-test:
