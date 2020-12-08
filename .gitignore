@@ -24,3 +24,4 @@ cabal.project.local~
 haskell-in-depth.cabal
 *~
 out
+stack.yaml.lock
